@@ -38,6 +38,7 @@ module.exports = function core(defaultLibraryName) {
           libraryName = defaultLibraryName,
           style = true,
           styleLibrary,
+          styleLibraryDir = 'packages',
           root = '',
           camel2Dash = true,
         } = options;
@@ -76,14 +77,14 @@ module.exports = function core(defaultLibraryName) {
             const themeName = styleLibraryName.replace(/^~/, '');
             cachePath[libraryName] = styleLibraryName.indexOf('~') === 0
               ? resolve(process.cwd(), themeName)
-              : `${libraryName}/${libDir}/${themeName}`;
+              : `${libraryName}/${styleLibraryDir}/${themeName}`;
           }
 
           if (libraryObjs[methodName]) {
             /* istanbul ingore next */
             if (cache[libraryName] === 2) {
-              throw Error('[babel-plugin-component] If you are using both' +
-                'on-demand and importing all, make sure to invoke the' +
+              throw Error('[babel-plugin-tree-shaking-import] If you are using both' +
+                ' on-demand and importing all, make sure to invoke the' +
                 ' importing all first.');
             }
             if (styleRoot) {

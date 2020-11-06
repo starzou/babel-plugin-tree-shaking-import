@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-component",
-  "version": "1.1.1",
+  "name": "babel-plugin-tree-shaking-import",
+  "version": "1.1.2",
   "description": "Modular build plugin for babel.",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,8 @@
   ],
   "author": [
     "chencheng <sorrycc@gmail.com>",
-    "qingwei-li <cinwell.li@gmail.com>"
+    "qingwei-li <cinwell.li@gmail.com>",
+    "starzou (https://github.com/starzou)"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -37,10 +38,10 @@
     "mocha": "4.0.1",
     "pre-commit": "~1.1.2"
   },
-  "repository": "ElementUI/babel-plugin-component",
-  "homepage": "https://github.com/ElementUI/babel-plugin-component#readme",
+  "repository": "starzou/babel-plugin-tree-shaking-import",
+  "homepage": "https://github.com/starzou/babel-plugin-tree-shaking-import#readme",
   "bugs": {
-    "url": "https://github.com/ElementUI/babel-plugin-component/issues"
+    "url": "https://github.com/starzou/babel-plugin-tree-shaking-import/issues"
   },
   "babel": {
     "presets": [
